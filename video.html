@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video with Background Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('images/paper.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+}
+
+video {
+    width: 80%;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+}
+</style>
+<body>
+    <div class="container">
+        <video autoplay controls>
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
